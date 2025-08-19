@@ -7,8 +7,16 @@
 # Inherit from renoir device
 $(call inherit-product, device/xiaomi/renoir/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Inherit some common Voltage stuff.
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
+TARGET_BOOT_ANIMATION_RES := 1920
+VOLTAGE_BUILD_TYPE := UNOFFICIAL
+PRODUCT_BRAND := Xiaomi
+PRODUCT_DEVICE := renoir
+PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_MODEL := M2101K9R
+PRODUCT_NAME := voltage_renoir
 
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := renoir
